@@ -1,0 +1,19 @@
+:root {
+  --primaryGreen: hsl(177, 100%, 33%); // #00A9A0
+  --greenDark: hsl(176, 100%, 10%); // #003330
+  --greenLight: hsl(176, 50%, 73%); // #99DDD9
+
+  --primaryBlue: hsl(196, 100%, 33%); // #007BA8
+  --darkBlue: hsl(196, 100%, 24%); // #005a7a
+  --lightBlue: hsl(196, 49%, 73%); // #99CADC
+
+  --primaryOrange: hsl(30, 92%, 54%); // #F68B1F
+  --darkOrange: hsl(30, 77%, 44%); // #C56F19
+  --lightOrange: hsl(31, 91%, 82%); // #FBD1A5
+
+  --medGrey: hsl(0, 0%, 44%); // #6F6F6F
+  --dkGrey: hsl(0, 0%, 25%); // #3F3F3F
+  --black:hsl(0, 0%, 6%); // #0F0F0F
+  --white: hsl(240, 100%, 99%); // #F8F8FF
+  --white60: hsla(240, 100%, 99%, .85); // #F8F8FF
+}

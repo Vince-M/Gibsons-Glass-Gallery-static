@@ -1,0 +1,10 @@
+@use '../util' as u;
+
+.artworkcard {
+  width: u.rem(60);
+
+  &__title {
+    font-size: u.rem(18);
+    color: var(--darkBlue);
+  }
+}

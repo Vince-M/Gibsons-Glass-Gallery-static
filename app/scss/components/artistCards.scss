@@ -1,0 +1,9 @@
+@use '../util' as u;
+
+.card {
+  border: 1px solid var(--darkBlue);
+}
+
+.testPadding {
+  padding: u.rem(30);
+}
