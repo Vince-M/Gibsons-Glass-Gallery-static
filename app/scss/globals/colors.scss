@@ -1,19 +1,20 @@
 :root {
-  --primaryGreen: hsl(177, 100%, 33%); // #00A9A0
-  --greenDark: hsl(176, 100%, 10%); // #003330
-  --greenLight: hsl(176, 50%, 73%); // #99DDD9
+  --primaryGreen: hsl(177, 100%, 33%); // #00A9A0  rgb(0, 169, 160)
+  --greenDark: hsl(176, 100%, 10%); // #003330   	rgb(0, 51, 48)
+  --greenLight: hsl(176, 50%, 73%); // #99DDD9   	rgb(153, 221, 217)
 
-  --primaryBlue: hsl(196, 100%, 33%); // #007BA8
-  --darkBlue: hsl(196, 100%, 24%); // #005a7a
-  --lightBlue: hsl(196, 49%, 73%); // #99CADC
+  --primaryBlue: hsl(196, 100%, 33%); // #007BA8  rgb(0, 123, 168)
+  --primaryBlueDark: hsl(196, 100%, 10%);  // #002532   	rgb(0, 37, 50)
+  --darkBlue: hsl(196, 100%, 24%); // #005a7a  rgb(0, 90, 122)
+  --lightBlue: hsl(196, 49%, 73%); // #99CADC  rgb(153, 202, 220)
 
-  --primaryOrange: hsl(30, 92%, 54%); // #F68B1F
-  --darkOrange: hsl(30, 77%, 44%); // #C56F19
-  --lightOrange: hsl(31, 91%, 82%); // #FBD1A5
+  --primaryOrange: hsl(30, 92%, 54%); // #F68B1F  rgb(246, 139, 31)
+  --darkOrange: hsl(30, 77%, 44%); // #C56F19   	rgb(197, 111, 25)
+  --lightOrange: hsl(31, 91%, 82%); // #FBD1A5  rgb(251, 209, 165)
 
-  --medGrey: hsl(0, 0%, 44%); // #6F6F6F
-  --dkGrey: hsl(0, 0%, 25%); // #3F3F3F
-  --black:hsl(0, 0%, 6%); // #0F0F0F
-  --white: hsl(240, 100%, 99%); // #F8F8FF
-  --white60: hsla(240, 100%, 99%, .85); // #F8F8FF
+  --medGrey: hsl(0, 0%, 44%); // #6F6F6F   	rgb(111, 111, 111)
+  --dkGrey: hsl(0, 0%, 25%); // #3F3F3F   	rgb(63, 63, 63)
+  --black:hsl(0, 0%, 6%); // #0F0F0F   	rgb(15, 15, 15)
+  --white: hsl(240, 100%, 99%); // #F8F8FF   	rgb(248, 248, 255)
+  --white60: hsla(240, 100%, 99%, .85); // #F8F8FF   	rgba(248, 248, 255, .85)
 }

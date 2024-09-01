@@ -18,3 +18,41 @@ body {
 	background-color: var(--white);
 	color: var(--black);
 }
+
+img {
+	display: block;
+	width: 100%;
+}
+
+figure,
+blockquote {
+	margin: 0;
+}
+
+header ul,
+footer ul {
+	margin: 0;
+	padding: 0;
+
+	li {
+		list-style-type: none;
+	}
+}
+
+.visually-hidden {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+
+	&:focus {
+		left: 0;
+		width: auto;
+		height: auto;
+		background-color: #fff;
+		padding: 0.5rem;
+		border: 1px solid;
+	}
+}
