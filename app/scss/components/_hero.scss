@@ -1,0 +1,25 @@
+@use '../util' as u;
+
+.hero {
+
+}
+
+.featureImage {
+  background: url(/img/gibsons_hero_1920x750.jpg) no-repeat;
+  background-position: center top;
+  background-size: cover; 
+  left: 50%; 
+  padding: 0; 
+  position: relative;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin-top: 0px; 
+  margin-bottom: 0px; 
+  overflow: hidden;
+  height: u.rem(575);
+
+  @include u.breakpoint-down(small){
+    background-position: left top;
+    height: u.rem(450);
+  }
+}

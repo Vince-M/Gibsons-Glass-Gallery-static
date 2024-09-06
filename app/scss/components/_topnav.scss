@@ -11,6 +11,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: min(100% - u.rem(48), u.rem(1200));
+    margin-inline: auto;
   }
 
   &__links {
