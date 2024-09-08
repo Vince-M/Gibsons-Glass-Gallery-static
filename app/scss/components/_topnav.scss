@@ -13,8 +13,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: min(100% - u.rem(48), u.rem(1200));
-    margin-inline: auto;
+    // padding-block: 12px;
+    padding-block: 0;
   }
 
   &__homelink {
@@ -24,6 +24,23 @@
       z-index: 100;
       width: 65%;
       margin: 0;
+    }
+  }
+
+  &__overlay {
+
+    @include u.breakpoint-down(small) {
+      position: fixed;
+      inset: 0;
+      background-color: var(--menu-overlay);
+      opacity: 0;
+      transition: opacity 400ms ease-in-out;
+      pointer-events: none;
+
+      &:has(+ .topnav__open[aria-expanded='true']) {
+        opacity: 1;
+        pointer-events: all;
+      }
     }
   }
 
@@ -44,19 +61,23 @@
   //   }
   // }
 
-  &__open {}
+  &__open {
+    &[aria-expanded='true'] + .topnav__menu {
+      translate: 0 0;
+    }
+  }
 
   &__menu {
 
     @include u.breakpoint-down(small) {
       position: fixed;
       inset: 0 0 auto 0;
-      padding: 12px 24px 60px;
+      // padding: 12px 24px 60px;
+      padding: 60px 24px 60px;
       border-radius: 0 0 20px 20px;
       box-shadow: 0 12px 12px var(--menu-shadow);
       translate: 0 -110%;
       transition: translate 400ms ease-in-out;
-      // translate: 0 0;
     }
   }
 
@@ -66,7 +87,8 @@
     @include u.breakpoint-down(small) {
       display: block;
       margin-inline-start: auto;
-      margin-block-end: 20px;
+      // margin-block-end: 20px;
+      margin-block-end: 60px;
     }
   }
 

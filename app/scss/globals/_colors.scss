@@ -5,7 +5,8 @@
 
   --primaryBlue: hsl(196, 100%, 33%); // #007BA8  rgb(0, 123, 168)
   --primaryBlueDark: hsl(196, 100%, 10%);  // #002532   	rgb(0, 37, 50)
-  --menu-shadow: hsla(196, 100%, 10%, 60%);  // #002532   	rgb(0, 37, 50)
+  --menu-shadow: hsla(196, 100%, 10%, 60%);  // #002532   	rgba(0, 37, 50. 60%)
+  --menu-overlay: hsla(196, 100%, 33%, 40%); // #007BA8  rgba(0, 123, 168, 40%)
   --darkBlue: hsl(196, 100%, 24%); // #005a7a  rgb(0, 90, 122)
   --lightBlue: hsl(196, 49%, 73%); // #99CADC  rgb(153, 202, 220)
 
