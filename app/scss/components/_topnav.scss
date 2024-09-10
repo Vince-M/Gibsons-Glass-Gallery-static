@@ -34,7 +34,7 @@
       inset: 0;
       background-color: var(--menu-overlay);
       opacity: 0;
-      transition: opacity 400ms ease-in-out;
+      transition: opacity ease-in-out;
       pointer-events: none;
 
       &:has(+ .topnav__open[aria-expanded='true']) {
@@ -63,6 +63,11 @@
   // }
 
   &__open {
+
+    @include u.breakpoint(medium) {
+      display: none;
+    }
+
     &[aria-expanded='true'] + .topnav__menu {
       translate: 0 0;
     }
@@ -78,7 +83,7 @@
       border-radius: 0 0 20px 20px;
       box-shadow: 0 12px 12px var(--menu-shadow);
       translate: 0 -110%;
-      transition: translate 400ms ease-in-out;
+      transition: translate ease-in-out;
     }
   }
 
@@ -97,6 +102,10 @@
     display: flex;
     flex-direction: row;
     gap: 30px;
+
+    @include u.breakpoint(medium) {
+      margin-left: 30px;
+    }
 
     @include u.breakpoint-down(small) {
       flex-direction: column;
