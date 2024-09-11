@@ -1,6 +1,8 @@
 @use '../util' as u;
 
 .topnav {
+  position: sticky;
+  top: 0;
 
   &,
   &__menu {
