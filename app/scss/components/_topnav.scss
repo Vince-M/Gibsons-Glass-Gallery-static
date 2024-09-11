@@ -72,6 +72,10 @@
 
     &[aria-expanded='true'] + .topnav__menu {
       translate: 0 0;
+
+      @media (prefers-reduced-motion) {
+        opacity: 1;
+      }
     }
   }
 
@@ -86,6 +90,12 @@
       box-shadow: 0 12px 12px var(--menu-shadow);
       translate: 0 -110%;
       transition: translate ease-in-out;
+
+      @media (prefers-reduced-motion) {
+        translate: 0;
+        opacity: 0;
+        transition-property: opacity;
+      }
     }
   }
 
