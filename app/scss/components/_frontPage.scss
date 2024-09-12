@@ -1,0 +1,24 @@
+@use '../util' as u;
+
+.intro {
+
+  &__header {
+    
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    padding: 0 u.rem(24);
+  }
+}
+
+.heading {
+
+    &__wrapper {
+      width: min(100% - u.rem(48), u.rem(800));
+      margin-inline: auto;
+      padding: u.rem(32) 0 u.rem(50);
+  }
+}
