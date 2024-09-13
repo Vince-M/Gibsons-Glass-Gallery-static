@@ -1,5 +1,9 @@
 @use '../util' as u;
 
+h1.intro__heading {
+  margin-bottom: 0;
+}
+
 .intro {
 
   &__header {
@@ -11,6 +15,64 @@
     flex-direction: row;
     gap: 16px;
     padding: 0 u.rem(24);
+    margin-bottom: u.rem(48);
+  }
+
+  &__img {
+
+    &--lg {
+      border: 5px solid var(--darkBlue);
+      margin-bottom: u.rem(48);
+    }
+  }
+
+  &__featureImgs {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-bottom: 80px;
+  }
+}
+
+.featureImg {
+  max-width: 100%;
+  height: auto;
+  border: 5px solid var(--darkBlue);
+  margin-bottom: 16px;
+
+  &__link {
+    font-family: var(--font-text);
+    color: var(--primaryBlue);
+    font-weight: 700;
+    font-size: u.rem(18);
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--darkOrange);
+      text-decoration: underline;
+    }
+  }
+}
+
+.galleryPhotos {
+
+  &__twoCols {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin: 0 24px 40px;
+  }
+
+  &__fullWidth {
+    margin: 0 24px 40px;
+  }
+}
+
+.galleryPhoto {
+
+  &__img {
+    border: 5px solid var(--darkBlue);
   }
 }
 
@@ -19,6 +81,6 @@
     &__wrapper {
       width: min(100% - u.rem(48), u.rem(800));
       margin-inline: auto;
-      padding: u.rem(32) 0 u.rem(50);
+      padding: u.rem(32) 0 u.rem(48);
   }
 }

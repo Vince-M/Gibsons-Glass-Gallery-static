@@ -21,6 +21,7 @@
 
   &__homelink {
     margin: 16px 0 16px;
+    cursor: pointer;
 
     @include u.breakpoint-down(small) {
       z-index: 100;
@@ -132,9 +133,11 @@
     font-weight: 400;
     color: var(--primaryBlueDark);
     text-decoration: none;
+    cursor: pointer;
 
     &:hover {
       color: var(--darkOrange);
+      text-decoration: underline;
     }
   }
 }
