@@ -32,6 +32,7 @@
   width: 100vw;
   height: auto;
   min-height: u.rem(300); // 300px;
+  border-bottom: 5px solid var(--darkBlue);
   overflow: hidden;
   position: relative;
   display: block;
