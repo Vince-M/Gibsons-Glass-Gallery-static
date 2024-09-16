@@ -6,6 +6,198 @@
 
   <title>Gibson's Gallery</title>
 
+
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  
+  
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="dist/style.css">
+  <script defer src="dist/bodyScrollLock.min.js"></script>
+  <script defer src="dist/script.js"></script>
+
+</head>
+
+<a href="#main" class="visually-hidden">Skip to main content</a>
+<body>
+
+  <!-- HEADER
+  =================================================== -->
+  <header class="topnav header" role="banner">
+    <h2 class="visually-hidden">Header</h2>
+    <div class="top__bar"></div>
+    <div class="wrapper topnav__wrapper">
+      <a href="/" class="topnav__homelink hover-fade">
+        <img src="img/gibsons_gallery_header.svg" alt="Gibson's Gallery homepage" class="topnav__logo" width="340" height="78">
+      </a>
+      <nav class="nav">
+        <span id="nav-label" hidden>Navigation</span>
+        <div id="overlay" class="topnav__overlay"></div>
+
+        <button
+          id="btnOpen"
+          class="topnav__open" 
+          aria-expanded="false"
+          aria-labelledby="nav-label"
+          >
+          <img src="img/hamburger.svg" alt="" width="30" height="23" />
+        </button>
+
+        <div
+          id="menuTopNav"
+          class="topnav__menu" 
+          role="dialog" 
+          aria-labelledby="nav-label">
+
+          <button
+            id="btnClose"
+            class="topnav__close">
+            <img src="img/close-button.svg" alt="" width="26" height="26" />
+          </button>
+          
+          <ul class="topnav__links">
+            <li class="topnav__item">
+              <a href="artists.html" class="topnav__link">Artists</a>
+            </li>
+            <li class="topnav__item">
+              <a href="workshops.html" class="topnav__link">Workshops</a>
+            </li>
+            <li class="topnav__item">
+              <a href="services.html" class="topnav__link">Services</a>
+            </li>
+            <li class="topnav__item">
+              <a href="about.html" class="topnav__link">About</a>
+            </li>
+            <li class="topnav__item">
+              <a href="contact.html" class="topnav__link">Contact</a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+    </div>
+
+  </header>
+  <!-- ============================================== -->
+
+  <!-- MAIN
+  =================================================== -->
+  <main id="main" class="main" role="main">
+
+
+    <!-- HERO SECTION START -->
+    <section class="indexHero">
+      <div class="hero-img">
+        <img class="full-width" src="img/hero_index_1920x750.jpg" alt="">
+      </div>
+    </section>
+    <!-- HERO SECTION END -->
+
+
+    <section class="wrapper intro">
+        <article class="intro__header heading__wrapper">
+          <h1 class="intro__heading">Welcome to Gibson's Gallery Glass Art and More</h1>
+        </article>
+        <article class="wrapper intro__text">
+            <div class="col1">
+              <p>Nestled in the picturesque Albert Beach, Manitoba, Gibson's Gallery Glass Art and More is your premier destination for exquisite stained glass and fused glass décor. Our gallery showcases a stunning collection of glass art, each piece meticulously crafted to add a touch of elegance and artistry to any space.</p>
+              <h2>Visit Us</h2>
+              <p>Experience the magic of glass art at Gibson's Gallery Glass Art and More. We invite you to visit our gallery, explore our collection, and discuss your next project with our talented team. Let us transform your ideas into a captivating reality.</p>
+            </div>
+            <div class="col2">
+              <h2>Celebrating Local Talent</h2>
+              <p>In addition to our custom glass projects, Gibson's Gallery proudly exhibits the works of talented local artists. Our gallery is a vibrant hub for the community, showcasing a diverse array of artistic expressions that highlight the rich cultural heritage of Albert Beach and the surrounding area.</p>
+            </div>
+        </article>
+        <article class="wrapper intro__img--lg">
+          <img src="img/intro__img--lg.jpg" alt="visitors in the Gallery appreciating the artwork" width="1200" height="350">
+        </article>
+        <article class="wrapper intro__featureImgs">
+          <div class="featureImg__artists">
+            <img class="featureImg" src="img/featureImg__artists_560x556.jpg" alt="paintbrushes in a jar, other artists supplies" width="560" height="556">
+            <a class="featureImg__link" href="artists.html">Artists &#10095;</a>
+          </div>
+          <div class="featureImg__workshops">
+            <img class="featureImg" src="img/featureImg__workshops_560x556.jpg" alt="workshop participant showing her painting on tyndal stone" width="560" height="556">
+            <a class="featureImg__link" href="workshops.html">Workshops &#10095;</a>
+          </div>
+          <div class="featureImg__services">
+            <img class="featureImg"  src="img/featureImg__services_560x556.jpg" alt="prints for sale in a flip case" width="560" height="556">
+            <a class="featureImg__link" href="services.html">Services &#10095;</a>
+          </div>
+          <div class="featureImg__about">
+            <img class="featureImg" src="img/featureImg__about_560x556.jpg" alt="Gibson's Gallery logo as stained glass hanging in the window" width="560" height="556">
+            <a class="featureImg__link" href="about.html">About &#10095;</a>
+          </div>
+        </article>
+    </section>
+
+    <section class="workshopInfo">
+    </section>
+
+    <section class="workshop__connect">
+      <article class="wrapper workshop__notice">
+        <img class="workshop__branding" src="img/gibsons-mark.svg" alt="Gibson's Gallery Glass Art & More" width="400" height="115">
+
+        <div class="workshop__text">
+          <h5>Get Notified of our next<br>
+            Classes/Workshops</h5>
+
+              <a class="workshop__button button ghost" href="contact.html">Workshop Info</a>
+
+        </div>
+      </article>
+    </section>
+
+    <section class="wrapper galleryPhotos">
+      <article class="galleryPhotos__twoCols">
+        <div class="galleryPhotos__col1">
+          <img class="galleryPhoto__img" src="img/galleryPhoto1__1180x700.jpg" alt="Fused Glass Keepsake Greeting Cards in stand" width="590" height="350">
+        </div>
+        
+        <div class="galleryPhotos__col2">
+          <img class="galleryPhoto__img" src="img/galleryPhoto2__1180x700.jpg" alt="Wire fused between class guitar and music notes in stand" width="590" height="350">
+        </div>
+      </article>
+      <article class="galleryPhotos__fullWidth">
+        <img class="galleryPhoto__img" src="img/galleryPhoto__fullWidth.jpg" alt="Gallery wall featuring various paintings" width="1200" height="500">
+      </article>
+    </section>
+
+    <section class="testiomonials">
+
+    </section>
+
+  </main>
+  <!-- ============================================== -->
+
+  <!-- FOOTER
+  =================================================== -->
+  <footer id="footer" class="footer" role="contentinfo">
+
+  </footer>
+  <!-- ============================================== -->
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Gibson's Gallery</title>
+
   <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

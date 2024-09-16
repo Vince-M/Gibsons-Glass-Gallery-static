@@ -1,0 +1,58 @@
+@use '../util' as u;
+
+.workshop {
+
+  &__connect {
+    background-color: var(--darkBlue);
+    width: 100%;
+    padding: 0;
+    margin-bottom: u.rem(64);
+  }
+
+  &__notice {
+    display: flex;
+    flex-direction: row;
+
+    @include u.breakpoint-down(small) {
+      flex-direction: column;
+    }
+
+
+    img {
+      display: inline-block;
+      max-width: 100%;
+      margin: 40px 0;
+    }
+
+  }
+
+  &__branding {
+    margin: 40px 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+
+    @include u.breakpoint-down(small) {
+      align-items: center;
+      padding-bottom: u.rem(48);
+    }
+    
+
+    h5 {
+      font-family: var(--font-text);
+      font-weight: 500;
+      font-size: u.rem(28);
+      color: var(--white);
+      margin-bottom: 24px;
+    }
+  }
+
+  
+}

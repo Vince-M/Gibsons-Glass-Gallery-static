@@ -1,0 +1,136 @@
+@use '../util' as u;
+
+h1.intro__heading {
+  margin-bottom: u.rem(24);
+}
+
+.intro {
+  margin-bottom: u.rem(80);
+
+  &__text {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    padding: 0 u.rem(24);
+    margin-bottom: u.rem(48);
+
+    @include u.breakpoint-down(small) {
+      flex-direction: column;
+      padding: 0;
+      width: 100%;
+    }
+  }
+
+  &__img {
+
+    &--lg {
+      border: 5px solid var(--darkBlue);
+      margin-bottom: u.rem(48);
+
+      @include u.breakpoint-down(small) {
+        margin-inline:  0;
+        width: 100%;
+      }
+
+      img {
+
+        @include u.breakpoint-down(small) {
+          object-fit: cover;
+          -o-object-fit: cover;
+          position: relative;
+          transform: translateX(-50%);
+          left: 50%;
+          overflow: hidden;
+      }
+      }
+    }
+  }
+
+  &__featureImgs {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+
+
+    @include u.breakpoint-down(small) {
+      flex-direction: column;
+      gap: u.rem(40);
+    }
+  }
+}
+
+.featureImg {
+  max-width: 100%;
+  height: auto;
+  border: 5px solid var(--darkBlue);
+  margin-bottom: 16px;
+
+  &__link {
+    font-family: var(--font-text);
+    color: var(--primaryBlue);
+    font-weight: 700;
+    font-size: u.rem(18);
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--darkOrange);
+      text-decoration: underline;
+    }
+  }
+}
+
+.galleryPhotos {
+
+  &__twoCols {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin: 0 24px 40px;
+
+    @include u.breakpoint-down(small) {
+      flex-direction: column;
+    }
+  }
+
+  &__fullWidth {
+    margin: 0 24px 40px;
+
+    @include u.breakpoint-down(small) {
+      margin: 0 0 40px;
+    }
+
+    img {
+
+      @include u.breakpoint-down(small) {
+        left: 50%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        overflow: hidden;
+        position: relative;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
+
+.galleryPhoto {
+
+  &__img {
+    border: 5px solid var(--darkBlue);
+  }
+}
+
+.heading {
+
+    &__wrapper {
+      width: min(100% - u.rem(48), u.rem(800));
+      margin-inline: auto;
+      padding: u.rem(32) 0 u.rem(24);
+
+      @include u.breakpoint-down(small) {
+        margin-inline: 0;
+        width: 100%;
+      }
+  }
+}
