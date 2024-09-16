@@ -2,19 +2,31 @@
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
 	font-family: var(--font-heading);
 	font-weight: 700;
+	line-height: 1.1;
+	text-wrap: balance;
 	margin-top: 0;
-	letter-spacing: -.5px;
+	letter-spacing: 0.055px;
 }
 
 h1 {
 	font-size: u.rem(60);
 	font-size: clamp(1.875rem, 1.02rem + 3.632vw, 3.75rem);
-	line-height: 1;
 	margin-block-end: u.rem(20);
 	color: var(--darkBlue);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--primaryBlue);
 }
 
 p {

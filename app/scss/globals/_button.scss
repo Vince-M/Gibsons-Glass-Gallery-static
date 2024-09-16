@@ -1,0 +1,58 @@
+@use '../util' as u;
+
+.button {
+  font-family: var(--font-text);
+  font-size: u.rem(28);
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: u.rem(16) u.rem(24);
+  display: inline-block;
+  text-decoration: none;
+  transition-property: background-color, border, color;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+
+  &.ghost {
+    background-color: var(--white);
+    color: var(--darkBlue);
+    border: 1px solid var(--darkBlue);
+
+    &:hover {
+      background-color: var(--darkBlue);
+      color: var(--white);
+      border: 1px solid var(--white);
+    }
+  }
+}
+
+
+// &__btn {
+//   background-color: var(--white);
+//   border: 1px solid var(--darkBlue);
+//   padding: 16px 24px;
+//   color: var(--darkBlue);
+
+//   a {
+//     font-family: var(--font-text);
+//     font-size: u.rem(28);
+//     font-weight: 500;
+//     line-height: 1;
+//     text-transform: uppercase;
+//     color: var(--darkBlue);
+//     text-decoration: none;
+
+//     &:hover {
+//       color: var(--white);
+//       transition: color 0.5s ease;
+//     }
+//   }
+
+//   &:hover {
+//     background-color: var(--darkBlue);
+//     color: var(--white);
+//     border: 1px solid var(--white);
+//     transition: background-color 0.5s ease;
+//   }
+// }

@@ -1,14 +1,11 @@
 @use '../util' as u;
 
 h1.intro__heading {
-  margin-bottom: 0;
+  margin-bottom: u.rem(24);
 }
 
 .intro {
-
-  &__header {
-    
-  }
+  margin-bottom: u.rem(80);
 
   &__text {
     display: flex;
@@ -16,6 +13,12 @@ h1.intro__heading {
     gap: 16px;
     padding: 0 u.rem(24);
     margin-bottom: u.rem(48);
+
+    @include u.breakpoint-down(small) {
+      flex-direction: column;
+      padding: 0;
+      width: 100%;
+    }
   }
 
   &__img {
@@ -23,6 +26,23 @@ h1.intro__heading {
     &--lg {
       border: 5px solid var(--darkBlue);
       margin-bottom: u.rem(48);
+
+      @include u.breakpoint-down(small) {
+        margin-inline:  0;
+        width: 100%;
+      }
+
+      img {
+
+        @include u.breakpoint-down(small) {
+          object-fit: cover;
+          -o-object-fit: cover;
+          position: relative;
+          transform: translateX(-50%);
+          left: 50%;
+          overflow: hidden;
+      }
+      }
     }
   }
 
@@ -30,7 +50,12 @@ h1.intro__heading {
     display: flex;
     flex-direction: row;
     gap: 16px;
-    margin-bottom: 80px;
+
+
+    @include u.breakpoint-down(small) {
+      flex-direction: column;
+      gap: u.rem(40);
+    }
   }
 }
 
@@ -62,10 +87,30 @@ h1.intro__heading {
     flex-direction: row;
     gap: 16px;
     margin: 0 24px 40px;
+
+    @include u.breakpoint-down(small) {
+      flex-direction: column;
+    }
   }
 
   &__fullWidth {
     margin: 0 24px 40px;
+
+    @include u.breakpoint-down(small) {
+      margin: 0 0 40px;
+    }
+
+    img {
+
+      @include u.breakpoint-down(small) {
+        left: 50%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        overflow: hidden;
+        position: relative;
+        transform: translateX(-50%);
+      }
+    }
   }
 }
 
@@ -81,6 +126,11 @@ h1.intro__heading {
     &__wrapper {
       width: min(100% - u.rem(48), u.rem(800));
       margin-inline: auto;
-      padding: u.rem(32) 0 u.rem(48);
+      padding: u.rem(32) 0 u.rem(24);
+
+      @include u.breakpoint-down(small) {
+        margin-inline: 0;
+        width: 100%;
+      }
   }
 }
