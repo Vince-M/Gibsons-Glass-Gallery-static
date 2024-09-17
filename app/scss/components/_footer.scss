@@ -1,0 +1,67 @@
+@use '../util' as u;
+
+.footer {
+  background-color: var(--lightGrey);
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    padding: 24px 20px;
+  }
+
+  &__branding {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  &__nav {
+    width: 100%;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 30px;
+    padding-bottom: 24px;
+  }
+
+  &__contactInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 80px;
+  }
+
+  &__info,
+  &__connect {
+
+    strong {
+      color: var(--darkBlue);
+    }
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+
+    & > p {
+      font-size: 14px;
+    }
+  }
+}
