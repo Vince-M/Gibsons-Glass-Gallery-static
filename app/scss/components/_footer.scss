@@ -12,6 +12,10 @@
     display: flex;
     flex-direction: row;
     padding: 24px 20px;
+
+    @include u.breakpoint-down(small) {
+      flex-direction: column;
+    }
   }
 
   &__branding {
@@ -20,10 +24,20 @@
     align-items: flex-start;
     width: 100%;
     max-width: 100%;
+
+    @include u.breakpoint-down(small) {
+      margin-bottom: u.rem(20);
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   &__nav {
     width: 100%;
+
+    @include u.breakpoint-down(small) {
+      text-align: center;
+    }
   }
 
   &__menu {
@@ -32,6 +46,11 @@
     justify-content: flex-end;
     gap: 30px;
     padding-bottom: 24px;
+
+    @include u.breakpoint-down(small) {
+      flex-direction: column;
+      padding-bottom: u.rem(40);
+    }
   }
 
   &__contactInfo {
@@ -39,6 +58,11 @@
     flex-direction: row;
     justify-content: flex-end;
     gap: 80px;
+
+    @include u.breakpoint-down(small) {
+      flex-direction: column;
+      gap: 0;
+    }
   }
 
   &__info,
@@ -52,6 +76,15 @@
   &__social {
     display: flex;
     flex-direction: row;
+
+    @include u.breakpoint-down(small) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 50%;
+      align-items: center;
+      margin: 0 auto;
+    }
   }
 
   .copyright {
