@@ -87,6 +87,17 @@
     }
   }
 
+  a {
+    color: var(--primaryBlueDark);
+    text-decoration: none;
+    cursor: pointer;
+  
+    &:hover {
+      color: var(--hoverOrange);
+      text-decoration: underline;
+    }
+  }
+
   .copyright {
     display: flex;
     flex-direction: row;
