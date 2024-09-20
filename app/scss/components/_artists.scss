@@ -56,3 +56,10 @@
     text-align: center;
   }
 }
+
+.artist {
+
+  &__krista {
+    border: 5px solid var(--darkBlue);
+  }
+}
