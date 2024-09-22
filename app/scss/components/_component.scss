@@ -21,13 +21,12 @@
     img {
       display: inline-block;
       max-width: 100%;
-      margin: 40px 0;
+      margin: 60px 0 70px;
     }
 
   }
 
   &__branding {
-    margin: 40px 0;
     text-align: center;
     width: 100%;
   }
@@ -49,6 +48,7 @@
       font-family: var(--font-text);
       font-weight: 500;
       font-size: u.rem(28);
+      line-height: 1.5;
       color: var(--white);
       margin-bottom: 24px;
     }

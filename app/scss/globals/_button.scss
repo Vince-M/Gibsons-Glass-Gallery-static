@@ -1,6 +1,6 @@
 @use '../util' as u;
 
-.button {
+.btn {
   font-family: var(--font-text);
   font-size: u.rem(28);
   line-height: 1;
@@ -14,16 +14,38 @@
   transition-duration: 200ms;
   transition-timing-function: ease-in-out;
 
-  &.ghost {
-    background-color: var(--white);
-    color: var(--darkBlue);
-    border: 1px solid var(--darkBlue);
+  &.primary {
+    background-color: var(--primary);
+    color: var(--ghost);
+    border: 1px solid var(--primary);
+  }
+
+  &.secondary {
+    background-color: var(--secondary);
+    color: var(--white);
+    border: 1px solid var(--secondary);
 
     &:hover {
-      background-color: var(--darkBlue);
-      color: var(--white);
-      border: 1px solid var(--white);
+      background-color: var(--ghost);
+      color: var(--secondary);
+      border: 1px solid var(--secondary);
     }
+  }
+
+  &.ghost {
+    background-color: var(--ghost);
+    color: var(--darkBlue);
+    border: 1px solid var(--primary);
+
+    &:hover {
+      background-color: var(--primary);
+      color: var(--ghost);
+      border: 1px solid var(--ghost);
+    }
+  }
+
+  &__workshop {
+    padding: 0;
   }
 }
 

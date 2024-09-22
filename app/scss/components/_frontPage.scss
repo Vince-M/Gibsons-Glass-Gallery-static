@@ -26,6 +26,7 @@ h1.intro__heading {
     &--lg {
       border: 5px solid var(--darkBlue);
       margin-bottom: u.rem(48);
+      overflow: hidden;
 
       @include u.breakpoint-down(small) {
         margin-inline:  0;

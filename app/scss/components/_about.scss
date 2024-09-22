@@ -7,6 +7,7 @@
     flex-direction: row;
     gap: u.rem(32);
     padding: 0 u.rem(24);
+    margin-bottom: u.rem(60);
   }
 
   &__col1,
@@ -14,14 +15,91 @@
     width: 100%;
   }
 
+  &__fullWidth {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--greenLight);
+    width: 100%;
+    height: auto;
+    margin-bottom: 80px;
+
+    &--col1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+    
+    &--col2 {
+      align-content: center;
+      padding-left: 20px;
+    }
+
+    &--col1,
+    &--col2 {
+      width: 100%;
+    }
+
+    img {
+      align-self: end;
+    }
+
+    &--content {
+      max-width: u.rem(480);
+    }
+  }
+
+  &__brand {
+    margin-bottom: u.rem(48);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-bottom: 80px;
+
+    &--col1,
+    &--col2 {
+      width: 100%;
+    }
+
+    h2 {
+      font-size: u.rem(40);
+      line-height: 1;
+      margin-bottom: u.rem(24);
+      margin-top: u.rem(40);
+    }
+
+    h2:not(.stainedGlassHead) {
+      margin-top: 0;
+    }
+  }
 }
 
 h1.artistTitle {
   font-size: u.rem(64);
   margin-bottom: u.rem(16);
+  line-height: .75;
 }
 
 h2.artistName {
+  color: var(--darkBlue);
   font-size: u.rem(32);
   margin-bottom: u.rem(40);
+}
+
+.krista {
+
+  &__artLinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: u.rem(80);
+  }
+
+  &__artLink {
+    border: 5px solid var(--darkBlue);
+  }
+
 }

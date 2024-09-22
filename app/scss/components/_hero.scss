@@ -38,6 +38,7 @@
   display: block;
   margin: 0 auto;
   top: 0;
+  border-bottom: u.rem(24) solid var(--primaryGreen);
 
   @media screen and (max-width: 639px) {
     min-height: auto;
