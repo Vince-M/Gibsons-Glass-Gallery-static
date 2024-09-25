@@ -1,6 +1,9 @@
 @use '../util' as u;
 
 .about {
+  display: flex;
+  flex-direction: row;
+  gap: u.rem(24);
 
   &__intro {
     display: flex;
@@ -8,6 +11,11 @@
     gap: u.rem(32);
     padding: 0 u.rem(24);
     margin-bottom: u.rem(60);
+
+    @include u.breakpoint-down(small) {
+      flex-direction: column;
+      padding: 0;
+    }
   }
 
   &__col1,
@@ -21,12 +29,21 @@
     background-color: var(--greenLight);
     width: 100%;
     height: auto;
-    margin-bottom: 80px;
+    margin-bottom: u.rem(80);
+
+    @include u.breakpoint-down(small) {
+      flex-direction: column;
+      margin-bottom: u.rem(40);
+    }
 
     &--col1 {
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
+
+      @include u.breakpoint-down(small) {
+        margin-bottom: u.rem(20);
+      }
     }
     
     &--col2 {
@@ -50,6 +67,19 @@
 
   &__brand {
     margin-bottom: u.rem(48);
+
+    @include u.breakpoint-down(small){
+      margin-bottom: u.rem(20);
+      margin-inline: auto;
+    }
+
+    &--logo {
+      max-width: 45%;
+
+      @include u.breakpoint-down(small) {
+        max-width: 90%;
+      }
+    }
   }
 
   &__content {
@@ -57,6 +87,10 @@
     flex-direction: row;
     gap: 16px;
     margin-bottom: 80px;
+
+    @include u.breakpoint-down(small) {
+      flex-direction: column;
+    }
 
     &--col1,
     &--col2 {
@@ -80,6 +114,10 @@ h1.artistTitle {
   font-size: u.rem(64);
   margin-bottom: u.rem(16);
   line-height: .75;
+
+  @include u.breakpoint-down(small) {
+    font-size: u.rem(48);
+  }
 }
 
 h2.artistName {
@@ -96,10 +134,50 @@ h2.artistName {
     grid-template-rows: 1fr 1fr;
     gap: 24px;
     margin-bottom: u.rem(80);
+
+    @include u.breakpoint-down(small) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      margin-bottom: u.rem(24);
+    }
+
   }
 
   &__artLink {
-    border: 5px solid var(--darkBlue);
-  }
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
 
+    &--container {
+      position: relative;
+    }
+  }
+} 
+
+.artLink  {
+
+  &__caption {
+    background-color: var(--white);
+    width: 100%;
+    overflow: hidden;
+
+    &--header {
+      font-family: var(--font-text);
+      font-size: u.rem(28);
+      line-height: 1.5;
+      font-weight: 500;
+      color: var(--darkBlue);
+      padding: u.rem(20);
+      margin: 0;
+    }
+
+    &--boarder {
+      border: 5px solid var(--darkBlue);
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
 }
