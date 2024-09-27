@@ -12,16 +12,31 @@
     padding: 0 u.rem(24);
     margin-bottom: u.rem(60);
 
-    @include u.breakpoint-down(small) {
+    @include u.breakpoint-down(medium) {
       flex-direction: column;
       padding: 0;
+    }
+  }
+
+  &__col2 {
+
+    @include u.breakpoint-down(medium) {
+      display: flex;
+      justify-content: center;
     }
   }
 
   &__col1,
   &__col2 {
     width: 100%;
+    
+    img {
+      height: auto;
+      display: flex;
+    }
   }
+
+  
 
   &__fullWidth {
     display: flex;
@@ -31,7 +46,7 @@
     height: auto;
     margin-bottom: u.rem(80);
 
-    @include u.breakpoint-down(small) {
+    @include u.breakpoint-down(medium) {
       flex-direction: column;
       margin-bottom: u.rem(40);
     }
@@ -41,14 +56,26 @@
       flex-direction: row;
       justify-content: flex-end;
 
-      @include u.breakpoint-down(small) {
-        margin-bottom: u.rem(20);
+      img {
+        height: auto;
+      }
+
+      @include u.breakpoint-down(medium) {
+        margin-bottom: u.rem(40);
+        justify-content: center;
       }
     }
     
     &--col2 {
       align-content: center;
       padding-left: 20px;
+
+      img {
+
+        @include u.breakpoint-down(medium) {
+          text-align: center;
+        }
+      }
     }
 
     &--col1,
@@ -62,13 +89,17 @@
 
     &--content {
       max-width: u.rem(480);
+
+      @include u.breakpoint-down(medium) {
+        max-width: 100%;
+      }
     }
   }
 
   &__brand {
     margin-bottom: u.rem(48);
 
-    @include u.breakpoint-down(small){
+    @include u.breakpoint-down(medium){
       margin-bottom: u.rem(20);
       margin-inline: auto;
     }
@@ -76,7 +107,7 @@
     &--logo {
       max-width: 45%;
 
-      @include u.breakpoint-down(small) {
+      @include u.breakpoint-down(medium) {
         max-width: 90%;
       }
     }
@@ -88,7 +119,7 @@
     gap: 16px;
     margin-bottom: 80px;
 
-    @include u.breakpoint-down(small) {
+    @include u.breakpoint-down(medium) {
       flex-direction: column;
     }
 
@@ -128,28 +159,54 @@ h2.artistName {
 
 .krista {
 
-  &__artLinks {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 24px;
-    margin-bottom: u.rem(80);
+  &__links {
+    display: flex;
+    flex-direction: row;
+    gap: u.rem(16);
+    flex-wrap: wrap;
+    margin-bottom: 56px;
 
-    @include u.breakpoint-down(small) {
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
-      margin-bottom: u.rem(24);
+    @include u.breakpoint-down(medium) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
     }
-
   }
 
-  &__artLink {
-    max-width: 100%;
-    height: auto;
-    overflow: hidden;
+  &__link {
+    width: 100%;
+    flex: 1 1 calc(50% - 10px);
+    margin-bottom: 32px;
 
-    &--container {
-      position: relative;
+    @include u.breakpoint-down(medium) {
+      text-align: left;
+      margin-bottom: 16px;
+    }
+
+    img {
+      border: 5px solid var(--darkBlue);
+      margin-bottom: 16px;
+      height: auto;
+
+      @include u.breakpoint-down(medium) {
+        width: 100%;
+        margin: 0 auto 16px;
+      }
+    }
+
+    a {
+      font-family: var(--font-text);
+      color: var(--primaryBlue);
+      font-weight: 700;
+      font-size: u.rem(18);
+      text-decoration: none;
+      cursor: pointer;
+  
+      &:hover {
+        color: var(--darkOrange);
+        text-decoration: underline;
+      }
     }
   }
 } 

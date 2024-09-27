@@ -30,6 +30,10 @@
     }
   }
 
+  &__logo {
+    padding: 16px 0;
+  }
+
   &__overlay {
 
     @include u.breakpoint-down(small) {
