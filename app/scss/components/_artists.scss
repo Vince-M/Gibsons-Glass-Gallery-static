@@ -9,6 +9,11 @@
     margin: 0;
     width: 100%;
 
+    @include u.breakpoint-down(small) {
+      flex-direction: column;
+      gap: 32px;
+    }
+
     img {
       border: 5px solid var(--darkBlue);
       height: auto;

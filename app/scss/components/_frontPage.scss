@@ -66,6 +66,10 @@ h1.intro__heading {
   border: 5px solid var(--darkBlue);
   margin-bottom: 16px;
 
+  @include u.breakpoint-down(small) {
+    
+  }
+
   &__link {
     font-family: var(--font-text);
     color: var(--primaryBlue);
