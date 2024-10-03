@@ -21,6 +21,13 @@ h1 {
 	color: var(--darkBlue);
 }
 
+h2 {
+	font-size: u.rem(28);
+	font-size: clamp(1.75rem, 1.331rem + 1.55vw, 2.5rem);
+	margin-block-end: u.rem(20);
+	color: var(--darkBlue);
+}
+
 h2,
 h3,
 h4,

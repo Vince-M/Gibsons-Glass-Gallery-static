@@ -7,6 +7,10 @@ h1.intro__heading {
 .intro {
   margin-bottom: u.rem(80);
 
+  @include u.breakpoint-down(small) {
+    margin-bottom: u.rem(32);
+  }
+
   &__text {
     display: flex;
     flex-direction: row;
@@ -21,36 +25,13 @@ h1.intro__heading {
     }
   }
 
-  &__img {
-
-    &--lg {
-      border: 5px solid var(--darkBlue);
-      margin-bottom: u.rem(48);
-      overflow: hidden;
-
-      @include u.breakpoint-down(small) {
-        margin-inline:  0;
-        width: 100%;
-      }
-
-      img {
-
-        @include u.breakpoint-down(small) {
-          object-fit: cover;
-          -o-object-fit: cover;
-          position: relative;
-          transform: translateX(-50%);
-          left: 50%;
-          overflow: hidden;
-      }
-      }
-    }
-  }
+ 
 
   &__featureImgs {
     display: flex;
     flex-direction: row;
     gap: 16px;
+    width: 100%;
 
 
     @include u.breakpoint-down(small) {
@@ -60,30 +41,7 @@ h1.intro__heading {
   }
 }
 
-.featureImg {
-  max-width: 100%;
-  height: auto;
-  border: 5px solid var(--darkBlue);
-  margin-bottom: 16px;
 
-  @include u.breakpoint-down(small) {
-    
-  }
-
-  &__link {
-    font-family: var(--font-text);
-    color: var(--primaryBlue);
-    font-weight: 700;
-    font-size: u.rem(18);
-    text-decoration: none;
-    cursor: pointer;
-
-    &:hover {
-      color: var(--darkOrange);
-      text-decoration: underline;
-    }
-  }
-}
 
 .galleryPhotos {
 
@@ -126,16 +84,3 @@ h1.intro__heading {
   }
 }
 
-.heading {
-
-    &__wrapper {
-      width: min(100% - u.rem(48), u.rem(800));
-      margin-inline: auto;
-      padding: u.rem(32) 0 u.rem(24);
-
-      @include u.breakpoint-down(small) {
-        margin-inline: 0;
-        width: 100%;
-      }
-  }
-}

@@ -22,43 +22,25 @@
       }
     }
 
-  &__feature {
-    margin-bottom: u.rem(64);
 
-    &--lg {
-      margin: 0 0 u.rem(48) 0;
-      width: 100%;
-  
-      @include u.breakpoint-down(small) {
-        margin-inline:  0;
-        width: 100%;
-    }
-
-      img {
-
-        @include u.breakpoint-down(small) {
-          object-fit: cover;
-          -o-object-fit: cover;
-          position: relative;
-          transform: translateX(-50%);
-          left: 50%;
-          overflow: hidden;
-        }
-      }
-    }
-  }
 }
 
 .visit {
   margin-bottom: u.rem(88);
 
+  @include u.breakpoint-down(small) {
+    margin-bottom: u.rem(32);
+  }
+
   h2 {
-    font-family: var(--font-heading);
-    font-size: u.rem(40);
     line-height: 1;
     font-weight: 700;
     color: var(--darkBlue);
     text-align: center;
+
+    @include u.breakpoint-down(small) {
+      line-height: 1.3;
+    }
   }
 }
 
