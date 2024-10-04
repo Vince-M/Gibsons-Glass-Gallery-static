@@ -1,0 +1,56 @@
+@use '../util' as u;
+
+.services {
+
+  &__twoCols {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+
+    @include u.breakpoint-down(small) {
+      flex-direction: column;
+    }
+
+  }
+
+  &__col1{
+    width: 100%;
+  }
+
+  &__intro {
+    height: u.rem(430);
+
+    @include u.breakpoint-down(small) {
+      height: auto;
+    }
+  }
+
+  &__col2 {
+    width: 100%
+  }
+
+  &__card {
+    background-color: var(--darkBlue);
+    padding: 0 20px 20px 20px;
+
+    img {
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      font-size: u.rem(36);
+      font-weight: 400;
+      color: var(--white);
+    }
+
+    p {
+      color: var(--white);
+      line-height: 2;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.services__card:first-child {
+  margin-bottom: 32px;
+}

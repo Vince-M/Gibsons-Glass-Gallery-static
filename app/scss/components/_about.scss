@@ -141,7 +141,7 @@
   }
 }
 
-h1.artistTitle {
+h1.artistName {
   font-size: u.rem(64);
   margin-bottom: u.rem(16);
   line-height: .75;
@@ -151,9 +151,10 @@ h1.artistTitle {
   }
 }
 
-h2.artistName {
+h2.artistTitle {
   color: var(--darkBlue);
   font-size: u.rem(32);
+  font-weight: 400;
   margin-bottom: u.rem(40);
 }
 

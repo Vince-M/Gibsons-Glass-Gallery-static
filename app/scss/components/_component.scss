@@ -126,6 +126,7 @@
     // width: min(100% - u.rem(48), u.rem(800));
     margin-inline: auto;
     padding: u.rem(32) 0 u.rem(24);
+    margin: 0 20px;
 
     @include u.breakpoint-down(small) {
       margin-inline: 0;
