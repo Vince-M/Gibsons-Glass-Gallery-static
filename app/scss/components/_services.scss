@@ -3,12 +3,12 @@
 .services {
 
   &__twoCols {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 16px;
 
     @include u.breakpoint-down(small) {
-      flex-direction: column;
+      grid-template-columns: 1fr;
     }
 
   }
@@ -34,7 +34,8 @@
     padding: 0 20px 20px 20px;
 
     img {
-      margin-bottom: 16px;
+      margin: 0 auto 16px;
+      height: auto;
     }
 
     h2 {
