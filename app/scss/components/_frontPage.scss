@@ -15,7 +15,7 @@ h1.intro__heading {
     display: flex;
     flex-direction: row;
     gap: 16px;
-    padding: 0 u.rem(24);
+    padding: 0;
     margin-bottom: u.rem(48);
 
     @include u.breakpoint-down(small) {
@@ -49,7 +49,7 @@ h1.intro__heading {
     display: flex;
     flex-direction: row;
     gap: 16px;
-    margin: 0 24px 40px;
+    margin: 0 0 40px;
 
     @include u.breakpoint-down(small) {
       flex-direction: column;
@@ -57,7 +57,7 @@ h1.intro__heading {
   }
 
   &__fullWidth {
-    margin: 0 24px 40px;
+    margin: 0 0 40px;
 
     @include u.breakpoint-down(small) {
       margin: 0 0 40px;

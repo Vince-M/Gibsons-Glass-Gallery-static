@@ -2,3 +2,9 @@
   --font-heading: 'Roboto Slab', Helvetica, Arial, sans-serif; /* heading font */
   --font-text: 'Lato', Helvetica, Arial, sans-serif; /* body font */
 }
+
+@font-face { font-family: 'Lato'; font-style: normal; font-weight: 400;  src: url( Lato-Regular.ttf) format( 'ttf' ); }
+@font-face { font-family: 'PTSerif'; font-style: normal; font-weight: 400;  src: url( PTSerif-Regular.ttf) format( 'ttf' ); }
+
+@font-face { font-family: 'Open Sans'; font-style: normal; font-weight: 500 700; src: url( OpenSans-Italic-VariableFont_wdth,wght.ttf) format('ttf');
+}
