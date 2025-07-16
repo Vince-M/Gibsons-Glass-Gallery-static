@@ -1,0 +1,76 @@
+@use '../util' as u;
+
+.artworkGallery {
+  margin-bottom: u.rem(64);
+
+  &__img {
+    border: 5px solid var(--darkBlue);
+    margin-bottom: u.rem(24);
+  }
+
+  &__fullwidth {
+    margin-bottom: u.rem(24);
+    max-height: u.rem(350);
+    overflow: hidden;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__twoCols {
+    display: flex;
+    flex-direction: row;
+    gap: u.rem(16);
+    margin: 0 0 40px;
+
+    @include u.breakpoint-down(small) {
+      flex-direction: column;
+    }
+  }
+
+  &__3img {
+
+  }
+
+  &__4img {
+
+  }
+}
+
+.artworkName {
+  font-family: var(--font-heading);
+  font-size: u.rem(20);
+  line-height: u.rem(24);
+  color: var(--darkBlue);
+  margin-bottom: 0;
+}
+
+.artworkMedia {
+  font-family: var(--font-text);
+  font-size: u.rem(16);
+  line-height: u.rem(20);
+  color: var(--black);
+}
+
+// .artwork {
+//   margin-bottom: 10px;
+//   max-height: 31.25rem;
+//   max-width: 35rem;
+//   overflow: hidden;
+
+//   &__info {
+//     color: var(--primaryBlue);
+//     cursor: pointer;
+//     font-family: var(--font-text);
+//     font-size: 1.125rem;
+//     font-weight: 700;
+//     text-decoration: none;
+//     margin-left: u.rem(24);
+
+//     h4 {
+//       margin-bottom: 0;
+//     }
+//   }
+// }

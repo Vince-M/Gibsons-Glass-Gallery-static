@@ -5,3 +5,15 @@ header {
   box-shadow: 0 3px 6px var(--dkGrey);
 
 }
+
+.intro {
+
+  &__header {
+    padding-top: u.rem(80);
+  }
+}
+
+.meetArtist {
+  font-weight: 900;
+  letter-spacing: 0.2;
+}

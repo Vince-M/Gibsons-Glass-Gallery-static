@@ -49,4 +49,23 @@
   &__krista {
     border: 5px solid var(--darkBlue);
   }
+
+  &__head {
+    font-size: u.rem(26);
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+
+  &__name {
+    color: var(--darkBlue);
+  }
+
+  &__gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: u.rem(8);
+    margin-inline: auto;
+    margin-bottom: 3rem;
+  }
 }
+

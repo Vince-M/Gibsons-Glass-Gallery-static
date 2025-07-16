@@ -176,6 +176,27 @@
 
 }
 
+.artwork {
+  max-height: u.rem(500);
+  max-width: u.rem(560);
+  overflow: hidden;
+  margin-bottom: 10px;
+
+    img {
+      filter: brightness(.8);
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      transition: all .3s ease-in-out;
+      margin: 0;
+
+      &:hover {
+        filter: brightness(1);
+        transform: scale(1.1);
+      }
+    }
+}
+
 .features {
   display: flex;
   flex-direction: row;

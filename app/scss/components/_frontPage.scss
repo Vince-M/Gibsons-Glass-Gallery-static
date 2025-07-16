@@ -48,7 +48,7 @@ h1.intro__heading {
   &__twoCols {
     display: flex;
     flex-direction: row;
-    gap: 16px;
+    gap: u.rem(16);
     margin: 0 0 40px;
 
     @include u.breakpoint-down(small) {

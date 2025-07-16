@@ -3,7 +3,15 @@
 .wrapper {
 	width: min(100% - u.rem(0), u.rem(1200));
 	margin-inline: auto;
+	
 	// padding-block: 60px;
+
+	&__xl {
+		// width: min(100% - u.rem(0), u.rem(11920));
+		width: 100%;
+		max-width: u.rem(1920);
+		margin-inline: auto;
+	}
 
 	@include u.breakpoint(large) {
 		// padding-block: 60px;

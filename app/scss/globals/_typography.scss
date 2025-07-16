@@ -21,6 +21,10 @@ h1 {
 	color: var(--darkBlue);
 }
 
+h1.meetArtist {
+	font-size: u.rem(25);
+}
+
 h2 {
 	font-size: u.rem(28);
 	font-size: clamp(1.75rem, 1.331rem + 1.55vw, 2.5rem);
